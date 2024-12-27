@@ -212,6 +212,6 @@ print(float_arr.dtype)  # Output: float64
 > [!IMPORTANT]  
 > If you have studied Article 80-85, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 13](/Numpy/Tasks/task_13.ipynb)
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [Numpy V/S Lists](/Numpy/Articles/86_numpy_vs_lists.md)
