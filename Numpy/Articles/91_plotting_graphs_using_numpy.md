@@ -202,6 +202,6 @@ NumPy makes it simple to generate data for plotting mathematical functions, whil
 > If you have studied Article 86-91, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 14](/Numpy/Tasks/task_14.ipynb)
 
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [Numpy Tricks : Important Methods - Part One](/Numpy/Articles/92_numpy_tricks_part1.md)
