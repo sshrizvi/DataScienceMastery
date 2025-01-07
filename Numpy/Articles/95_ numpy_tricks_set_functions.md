@@ -206,6 +206,6 @@ Set functions in NumPy are essential for understanding and manipulating relation
 > [!IMPORTANT]  
 > If you have studied Article 92-95, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 15](/Numpy/Tasks/task_15.ipynb)
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [Exploring More NumPy Functions](/Numpy/Articles/96_more_numpy_functions.md)

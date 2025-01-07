@@ -253,4 +253,4 @@ These advanced NumPy functions are essential for data manipulation and analysis 
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 [umpy Tricks : Set Functions](/Numpy/Articles/95_%20numpy_tricks_set_functions.md)
+> 🡺 [Numpy Tricks : Set Functions](/Numpy/Articles/95_%20numpy_tricks_set_functions.md)
