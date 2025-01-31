@@ -143,6 +143,6 @@ Structured arrays simplify the management of heterogeneous data, while saving/lo
 
 
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [Pandas Introduction](../../Pandas/Articles/101_pandas_introduction.md)
