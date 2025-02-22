@@ -1,4 +1,4 @@
-# <picture> <source srcset="https://numpy.org/images/logo.svg" type="image/webp"> <img src="https://numpy.org/images/logo.svg" width="32" height="32"> </picture> Pandas for Data Science 
+# <picture> <source srcset="https://pandas.pydata.org/static/img/pandas_mark_white.svg" type="image/webp"> <img src="https://pandas.pydata.org/static/img/pandas_mark_white.svg" width="32" height="32"> </picture> Pandas for Data Science 
 
 > [!TIP]  
 > Link to Previous Article  
@@ -20,6 +20,6 @@
 > [!IMPORTANT]  
 > If you have studied Article 101-109, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 16](/Pandas/Tasks/task_16.ipynb)
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [DataFrame - A Pandas Data Structure](../Articles/110_dataframes.md)
