@@ -25,6 +25,6 @@
 > [!IMPORTANT]  
 > If you have studied Article 115, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 18](/Pandas/Tasks/task_18.ipynb)
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [GroupBy Object in Pandas](./116_groupby_object.md)
