@@ -19,6 +19,6 @@
 > [!IMPORTANT]  
 > If you have studied Article 117, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 20](/Pandas/Tasks/task_20.ipynb)
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [Streamlit - A Handy Way to Build Data Science Dashboards](../../Streamlit/Articles/118_streamlit.md)
