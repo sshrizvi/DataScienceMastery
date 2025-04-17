@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 # 0. Preliminaries
 
 # File Paths
-file_path = r'H:/University of Allahabad/Data Science - Python/Pandas/CaseStudies/IndianStartupFunding/Data/processed_indian_startup_funding.csv'
-investors_file_path = r'H:/University of Allahabad/Data Science - Python/Pandas/CaseStudies/IndianStartupFunding/Data/investors.csv'
+file_path = r'C:/DDrive/UniversityOfAllahabad/DataScienceMastery/Pandas/CaseStudies/IndianStartupFunding/Data/processed_indian_startup_funding.csv'
+investors_file_path = r'C:/DDrive/UniversityOfAllahabad/DataScienceMastery/Pandas/CaseStudies/IndianStartupFunding/Data/investors.csv'
 
 # Page Configuration
 st.set_page_config(
@@ -216,9 +216,68 @@ def load_investor_details(investor):
     ).sum())
     
     
+def load_startup_details(startup):
     
+    filtered_df = startup_funding_df[startup_funding_df['StandardizedStartup'] == startup]
     
+    # Display Code -----------------------------------------------
     
+    # Setting Startup Name as Title 
+    st.title(startup.title())
+    
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        # Diplaying Industry of Startup
+        st.metric(
+            label = 'Industry',
+            border = True,
+            value = filtered_df.Industry.unique()[0].title()
+        )
+    with col2:
+        # Diplaying SubVertical of Startup
+        st.metric(
+            label = 'SubVertical',
+            border = True,
+            value = filtered_df.SubVertical.unique()[0].title()
+        )
+    with col3:
+        # Diplaying Location of Startup
+        st.metric(
+            label = 'Location',
+            border = True,
+            value = filtered_df.Location.unique()[0].title()
+        )
+        
+        
+    # Displaying Funding Rounds Details
+    st.subheader('Funding Details')
+    st.dataframe(
+        data = filtered_df[
+            [
+                'Round',
+                'Investors',
+                'Date'
+            ]
+        ].sort_values(
+            by = 'Date',
+            ascending = False
+        )
+    )
+    
+    # Displaying Similar Startups
+    st.subheader('Similar Startups')
+    # Logic
+    similarity_mask = startup_funding_df.apply(
+        func = lambda x : (x.Industry in filtered_df.Industry.unique().tolist()) & \
+                          (x.SubVertical in filtered_df.SubVertical.unique().tolist()),
+        axis = 1
+    )
+    similar_startups = startup_funding_df[similarity_mask]
+    st.dataframe(
+        data = similar_startups['Startup']
+    )
+
 
 
 
@@ -236,16 +295,17 @@ with st.sidebar:
 if selected_option == 'General':
     st.title('General Analysis')
 elif selected_option == 'Startup':
-    st.title('Startup Analysis')
-    selected_startup = st.selectbox(
+    selected_startup = st.sidebar.selectbox(
         label = 'Choose Startup',
         options = startup_funding_df.StandardizedStartup.unique().tolist()
     )
-    find_startup_btn = st.button(
+    find_startup_btn = st.sidebar.button(
         label = 'Find Startup Details',
         type = 'primary',
         use_container_width = True
     )
+    if find_startup_btn:
+        load_startup_details(selected_startup)
 elif selected_option == 'Investor':
     selected_investor = st.sidebar.selectbox(
         label = 'Choose Investor',
