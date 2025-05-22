@@ -277,13 +277,156 @@ def load_startup_details(startup):
     st.dataframe(
         data = similar_startups['Startup']
     )
+    
+    
+def load_general_details():
+    
+    # MonthOnMonth Funding
+    st.subheader('Month On Month Funding Count')
+    st.session_state.year_choice = st.number_input(
+        label = 'Enter Year',
+        min_value = int(startup_funding_df.Year.min()),
+        max_value = int(startup_funding_df.Year.max()),
+        value = 'min',
+        step = 1
+    )
+    startup_funding_df['Month'] = pd.to_datetime(startup_funding_df.Date).dt.month
+    mom_data = startup_funding_df[startup_funding_df.Year == st.session_state.year_choice].groupby(
+        by = 'Month'
+    )['Date'].count()
+    
+    st.line_chart(mom_data)
+    
+    
+    # Some Imporant Metrics
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.metric(
+            label = 'Total Funding Amount',
+            value = str(startup_funding_df.AmountInCrores.sum()) + ' Crores',
+            border = True
+        )
+        st.metric(
+            label = 'Maximum Funding Amount',
+            value = str(startup_funding_df.AmountInCrores.max()) + ' Crores',
+            border = True
+        )
+        
+        # Sector Analysis
+        st.subheader('Sector Analysis')
+        sector_data = startup_funding_df.Industry.value_counts().sort_values(
+            ascending = False
+        ).head(5)
+        
+        fig, ax = plt.subplots()
+        ax.pie(
+            x = sector_data.values,
+            labels = sector_data.index,
+            autopct = '%.2f%%',
+            colors = [
+                '#7ec2f6',
+                '#71afdd',
+                '#659bc5',
+                '#5888ac',
+                '#4c7494'
+            ],
+            textprops={'color':"w"}
+        )
+        fig.set_facecolor('#0f1017')
+        fig.set_animated(True)
+        st.pyplot(fig)
+        
+    with col2:
+        st.metric(
+            label = 'Average Funding Amount',
+            value = str(startup_funding_df.AmountInCrores.mean()) + ' Crores',
+            border = True
+        )
+        st.metric(
+            label = 'Total Funded Startups',
+            value = str(startup_funding_df.StandardizedStartup.unique().size) + ' Startups',
+            border = True
+        )
+        
+        # Funding Type Analysis
+        st.subheader('Funding Round Analysis')
+        round_data = startup_funding_df.Round.value_counts().sort_values(
+            ascending = False
+        ).head(5)
+        
+        fig, ax = plt.subplots()
+        ax.pie(
+            x = round_data.values,
+            labels = round_data.index,
+            autopct = '%.2f%%',
+            colors = [
+                '#7ec2f6',
+                '#71afdd',
+                '#659bc5',
+                '#5888ac',
+                '#4c7494'
+            ],
+            textprops={'color':"w"}
+        )
+        fig.set_facecolor('#0f1017')
+        fig.set_animated(True)
+        st.pyplot(fig)
+    
+    # Funding City Analysis
+    st.subheader('Funding City Analysis')
+    city_funding_data = startup_funding_df.Location.value_counts()
+    st.bar_chart(city_funding_data)
+    
+    # Top Startups
+    st.subheader('Top Startups')
+    col3, col4 = st.columns(2)
+    
+    with col3:
+        # Yearwise Top Startups
+        st.subheader('Yearwise')
+        st.session_state.year_choice2 = st.number_input(
+            label = 'Year',
+            min_value = int(startup_funding_df.Year.min()),
+            max_value = int(startup_funding_df.Year.max()),
+            value = 'min',
+            step = 1
+        )
+        top_startup_data = startup_funding_df[startup_funding_df.Year == st.session_state.year_choice2].groupby(
+            by = 'StandardizedStartup'
+        )['AmountInCrores'].sum().sort_values(
+            ascending = False
+        ).reset_index().rename(
+            columns = {
+                'StandardizedStartup' : 'Startup'
+            }
+        ).head()
+        st.dataframe(top_startup_data)
+
+    with col4:
+        # Overall Top Startups
+        st.subheader('Overall')
+        top_startup_data = startup_funding_df.groupby(
+            by = 'StandardizedStartup'
+        )['AmountInCrores'].sum().sort_values(
+            ascending = False
+        ).reset_index().rename(
+            columns = {
+                'StandardizedStartup' : 'Startup'
+            }
+        ).head()
+        st.dataframe(top_startup_data)
+    
+        
+    
 
 
 
 
 # 3. Creating the Sidebar of the Dashboard
 with st.sidebar:
-    st.title('Startup Menu')
+    st.title('Indian Startup Funding')
     selected_option = st.selectbox(
         label = 'Select POV',
         options = [
@@ -294,6 +437,7 @@ with st.sidebar:
 # 4. Setting Main Page Title according to POV
 if selected_option == 'General':
     st.title('General Analysis')
+    load_general_details()
 elif selected_option == 'Startup':
     selected_startup = st.sidebar.selectbox(
         label = 'Choose Startup',
