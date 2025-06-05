@@ -625,6 +625,6 @@ Let's start with the basics of Streamlit, so that we can also build data dashboa
         If you have exceuted the above bash command you might now be able to see a browser tab with the output.
 
 
-<!-- > [!TIP]  
+> [!TIP]  
 > Link to Next Article  
-> 🡺 []() -->
+> 🡺 [MultiIndex Series and DataFrames](../../Pandas/Articles/119_multiindex_series_and_dataframes.md)
