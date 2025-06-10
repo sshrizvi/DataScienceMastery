@@ -16,4 +16,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Time Series Analysis on Google Stock Data](../CaseStudies/TimeSeriesAnalysis/Articles/121_casestudy02_time_series_analysis.md)
