@@ -2,7 +2,7 @@
 
 > [!TIP]  
 > Link to Previous Article  
-> 🡸 [MultiIndex Series and DataFrames](../../Pandas/Articles/119_multiindex_series_and_dataframes.md)
+> 🡸 [Vectorized String Operations & DateTime in Pandas](../../../Articles/120_vectorized_strings_datetime.md)
 
 ## Time Series Analysis on Google Stock Data
 
@@ -66,4 +66,4 @@ It demonstrates a full workflow—from raw CSV ingestion to feature engineering,
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [IMDB Movie Review Analysis](../../IMDBMovieReview/Articles/122_imdb_movie_reviews.md)

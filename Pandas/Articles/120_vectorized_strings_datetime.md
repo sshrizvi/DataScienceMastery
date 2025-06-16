@@ -10,6 +10,10 @@
 > Link to Notebook of this article for practical implementation.
 > [Vectorized String Operations & DateTime in Pandas](../Notebooks/120_vectorized_strings_datetime.ipynb)  
 
+![Page 01](../Resources/Images/120_01.jpeg) 
+![Page 02](../Resources/Images/120_02.jpeg) 
+![Page 03](../Resources/Images/120_03.jpeg) 
+![Page 04](../Resources/Images/120_04.jpeg)
 
 > [!IMPORTANT]  
 > If you have studied Article 120, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 22](/Pandas/Tasks/task_22.ipynb)
