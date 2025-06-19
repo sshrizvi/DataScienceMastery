@@ -64,4 +64,4 @@ pip install -r requirements.txt
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Data Visualization - Matplotlib](../../../../DataVisualization/Articles/123_matplotlib.md)
