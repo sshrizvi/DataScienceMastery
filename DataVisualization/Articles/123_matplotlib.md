@@ -2,7 +2,7 @@
 
 > [!TIP]  
 > Link to Previous Article  
-> 🡸 [IMDB Movie Review Analysis](../../IMDBMovieReview/Articles/122_imdb_movie_reviews.md)
+> 🡸 [IMDB Movie Review Analysis](../../Pandas/CaseStudies/IMDBMovieReview/Articles/122_imdb_movie_reviews.md)
 
 ## Plotting using Matplotlib
 
@@ -12,8 +12,9 @@
 
 
 
-
+> [!IMPORTANT]  
+> If you have studied Article 123, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 23](/DataVisualization/Tasks/task_23.ipynb)
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Advanced Matplotlib](../Articles/124_advanced_matplotlib.md)
