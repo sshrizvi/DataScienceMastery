@@ -17,4 +17,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Session on Plotly (Express)](../Articles/125_plotly_express.md)
