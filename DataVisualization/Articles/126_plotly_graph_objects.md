@@ -4,16 +4,16 @@
 
 > [!TIP]  
 > Link to Previous Article  
-> 🡸 [Advanced Matplotlib](../Articles/124_advanced_matplotlib.md)
+> 🡸 [Session on Plotly (Express)](../Articles/125_plotly_express.md)
 
-## Session on Plotly (Express)
+## Session on Plotly Graph Objects
 
 > [!IMPORTANT]  
 > Link to notebook of this article for practical implementation.  
-> [Plotly (Express)](../Notebooks/125_plotly_express.ipynb)
+> [Plotly Graph Objects](../Notebooks/126_plotly_graph_objects.ipynb)
 
 
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 [Session on Plotly Graph Objects](../Articles/126_plotly_graph_objects.md)
+> 🡺 []()
