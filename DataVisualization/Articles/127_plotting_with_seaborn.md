@@ -4,16 +4,16 @@
 
 > [!TIP]  
 > Link to Previous Article  
-> 🡸 [Session on Plotly (Express)](../Articles/125_plotly_express.md)
+> 🡸 [Session on Plotly Graph Objects](../Articles/126_plotly_graph_objects.md)
 
-## Session on Plotly Graph Objects
+## Plotting with Seaborn
 
 > [!IMPORTANT]  
 > Link to notebook of this article for practical implementation.  
-> [Plotly Graph Objects](../Notebooks/126_plotly_graph_objects.ipynb)
+> [Plotly Graph Objects](../Notebooks/127_plotting_with_seaborn.ipynb)
 
 
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 [Plotting with Seaborn](../Articles/127_plotting_with_seaborn.md)
+> 🡺 []()
