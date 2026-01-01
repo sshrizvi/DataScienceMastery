@@ -14,6 +14,9 @@
 
 
 
+> [!IMPORTANT]  
+> If you have studied Article 127, I would suggest you to perform some task so that you can check on your learning. Here is the link : [Task 25](../Tasks/task_25.ipynb)
+
 > [!TIP]  
 > Link to Next Article  
 > 🡺 []()
