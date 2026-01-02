@@ -1,4 +1,4 @@
-<div align='center'><picture><source srcset="https://plotly-marketing-website-2.cdn.prismic.io/plotly-marketing-website-2/Z7eNlZ7c43Q3gCJw_Plotly-Logo-White.svg" type="image/webp"><img src="https://plotly-marketing-website-2.cdn.prismic.io/plotly-marketing-website-2/Z7eNlZ7c43Q3gCJw_Plotly-Logo-White.svg" width="300" height="300"></picture></div>
+<div align='center'><picture><source srcset="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" type="image/webp"><img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" width="300" height="300"></picture></div>
 
 # Data Visualization for Data Science
 
@@ -19,4 +19,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Plotting with Seaborn - Part 2](../Articles/128_plotting_with_seaborn_part_2.md)
