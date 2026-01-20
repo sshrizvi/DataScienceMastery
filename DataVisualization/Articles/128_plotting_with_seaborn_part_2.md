@@ -19,4 +19,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Data Gathering](../../DataAnalysisProcess/Articles/129_data_gathering.md)

@@ -1,0 +1,27 @@
+.clean-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.clean-table th {
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.clean-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.clean-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.clean-table tr:hover {
+    background-color: #f1f1f1;
+}
