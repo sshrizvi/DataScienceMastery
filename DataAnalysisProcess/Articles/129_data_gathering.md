@@ -16,4 +16,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Data Assessing & Cleaning](./130_data_assessing_and_cleaning.md)
