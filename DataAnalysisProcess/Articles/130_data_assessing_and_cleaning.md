@@ -14,4 +14,4 @@
 
 > [!TIP]  
 > Link to Next Article  
-> 🡺 []()
+> 🡺 [Advanced Web Scraping using Selenium](./131_advanced_web_scraping_using_selenium.md)
